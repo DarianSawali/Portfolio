@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Home, User, Bell, StickyNote, } from 'lucide-react';
 import './index.css';
 import './App.css';
 import Navigation from './components/Navigation';
 import Carousel from './carousel/Carousel';
 import CarouselControl from './carousel/CarouselControl';
+import Sidebar, { SidebarItem } from './components/Sidebar';
 
 
 function App() {
@@ -13,25 +13,35 @@ function App() {
 
   return (
     <>
-      <div>
-        <Navigation />
-        <header className="bg-blue-600 p-4 text-white text-center">
-          <h1 className="text-xl md:text-2xl lg:text-4xl"></h1>
+    <div className="bg-zinc-800 min-h-screen flex">
+      <Sidebar>
+        <SidebarItem icon={<Home size={20} />} text="Home" active />
+        <SidebarItem icon={<User size={20} />} text="About" />
+        <SidebarItem icon={<StickyNote size={20} />} text="Projects" />
+      </Sidebar>
+      <div className="flex-1 ">
+        <header className="bg-zinc-900 text-4xl p-4 text-white text-right">
+          <h1 className="text-xl md:text-2xl lg:text-4xl">Darian Sawali</h1>
         </header>
 
-        <main className="container mx-auto px-2 py-6">
+        <main className="container mx-auto p-4">
           <section id="projects">
             <Carousel />
-            <CarouselControl  />
           </section>
         </main>
-
-        <footer className='p-4 text-white text-center'>
-          &copy; 2024 Darian Sawali
-        </footer>
       </div>
+       
+    </div>
+
     </>
   )
 }
 
 export default App
+
+
+{/* <Sidebar>
+        <SidebarItem icon={<Home size={20} />} text="Home" active />
+        <SidebarItem icon={<User size={20} />} text="Profile" />
+        <SidebarItem icon={<Bell size={20} />} text="Notifications" alert />
+      </Sidebar> */}
