@@ -3,6 +3,7 @@ import { Home, User, Bell, StickyNote, } from 'lucide-react';
 import './index.css';
 import './App.css';
 import Navigation from './components/Navigation';
+import Projects from './components/Projects';
 import Carousel from './carousel/Carousel';
 import CarouselControl from './carousel/CarouselControl';
 import Sidebar, { SidebarItem } from './components/Sidebar';
@@ -27,6 +28,7 @@ function App() {
         <main className="container mx-auto p-4">
           <section id="projects">
             <Carousel />
+            <Projects />
           </section>
         </main>
       </div>
