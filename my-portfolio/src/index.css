@@ -2,31 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousel-item {
-  position: absolute;
-  transform: translateX(-50%);
+.tab-active {
+  color: white;
 }
 
-.carousel-item.scale-100 {
-  z-index: 10;
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
-}
-
-.carousel-item.scale-75 {
-  z-index: 5;
-  opacity: 0.5;
-  transform: translateX(-50%) scale(0.75);
-}
-
-.carousel-item.opacity-0 {
-  z-index: 0;
-  opacity: 0;
-}
+/* body {
+  background-color: black;
+} */
 
 ::-webkit-scrollbar {
   cursor: pointer;
-  width: 0.5rem;
+  width: 0.2rem;
 }
 
 ::-webkit-scrollbar-track {
