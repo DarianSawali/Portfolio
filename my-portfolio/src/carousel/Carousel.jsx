@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
+import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
 
 const projects = [
-    { title: 'Project 1', description: 'Description of Project 1', img: 'https://via.placeholder.com/300' },
-    { title: 'Project 2', description: 'Description of Project 2', img: 'https://via.placeholder.com/300' },
-    { title: 'Project 3', description: 'Description of Project 3', img: 'https://via.placeholder.com/300' },
-    { title: 'Project 4', description: 'Description of Project 4', img: 'https://via.placeholder.com/300' },
+    { 
+      title: 'TraveLogger', 
+      description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides voice recognition for hands-free operation.', 
+      img: traveloggerTitle
+    },
+    { 
+      title: 'Project 2', 
+      description: 'Description of Project 2', 
+      img: 'https://via.placeholder.com/300' 
+    },
+    { 
+      title: 'Project 3', 
+      description: 'Description of Project 3', 
+      img: 'https://via.placeholder.com/300' 
+    },
   ];
   
   const Carousel = () => {
@@ -20,7 +32,7 @@ const projects = [
   
     return (
       <div className="relative w-full mx-auto">
-        <div className="relative h-64 md:h-80 lg:h-128 xl:h-160 overflow-hidden rounded-lg">
+        <div className="relative h-64 md:h-80 lg:h-128 xl:h-160 overflow-hidden rounded-xl">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -31,13 +43,14 @@ const projects = [
             >
               <div className="flex h-full bg-purple-900 shadow-md">
                 <div className="w-1/3 p-4 ml-7 my-auto">
-                  <h3 className="text-lg font-bold">{project.title}</h3>
-                  <p className="mt-2">{project.description}</p>
+                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <p className="mt-2 text-gray-200 pt-2">{project.description}</p>
                 </div>
                 <div className="w-2/3">
                   <img src={project.img} className="w-full h-full object-cover" alt={project.title} />
                 </div>
               </div>
+              
             </div>
           ))}
         </div>
