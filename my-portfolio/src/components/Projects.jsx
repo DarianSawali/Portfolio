@@ -95,7 +95,7 @@ const Projects = () => {
 
   return (
     <div>
-      <div role="tablist" className="tabs tabs-bordered">
+      <div role="tablist" className="tabs tabs-bordered flex flex-wrap sm:flex-nowrap justify-center">
         {projects.map((project, index) => (
           <a
             key={index}
