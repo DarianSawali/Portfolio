@@ -2,6 +2,8 @@ import React from 'react';
 import { FaJava, FaHtml5, FaPython, FaCss3Alt, FaReact, FaNodeJs, FaUnity } from 'react-icons/fa';
 import { SiCsharp, SiTypescript, SiExpress, SiTailwindcss, SiMongodb, SiSocketdotio, SiAndroidstudio, SiJavascript  } from "react-icons/si";
 
+// import profile from "";
+
 const About = () => {
   const skills = [
     {name: 'Java', icon: <FaJava size={50} className='text-white'/> },
@@ -23,18 +25,21 @@ const About = () => {
     {name: 'Socket.IO', icon: <SiSocketdotio  size={50} className='text-white'/> },
     {name: 'Unity', icon: <FaUnity  size={50} className='text-white'/> },
     {name: 'Android Studio', icon: <SiAndroidstudio  size={50} className='text-white'/> },
-  ]
-
-
+  ];
 
   return (
     <div className="container mx-auto py-8 shadow-slate-400">
       <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2>
       <div className="grid grid-cols-6 gap-8">
-        <div className="col-span-2 ">
-          <img src="https://via.placeholder.com/300" alt="" className="rounded-lg w-auto h-full" />
+        <div className="col-span-6 md:col-span-2">
+          {/* <img src="" alt="" className="rounded-lg w-auto h-full" /> */}
+          <div className="avatar placeholder">
+            <div className="bg-neutral text-neutral-content w-60 md:w-48 lg:w-64 xl:w-80 rounded-lg">
+              <span className="text-3xl">DS</span>
+            </div>
+          </div>
         </div>
-        <div className="col-span-4 bg-gray-600 p-6 rounded-lg shadow-md">
+        <div className="col-span-6 md:col-span-4 bg-gray-600 p-6 rounded-lg shadow-md">
           {/* <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2> */}
           <p className="text-gray-200 mb-4">
             I’m Darian Sawali, a student at Simon Fraser University, specializing in Interactive Systems with a focus on software development. I have a strong foundation in Object-Oriented Programming, User Interface design, and API integration. My experience includes developing various applications, such as games and mobile apps, through academic coursework.
