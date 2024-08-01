@@ -9,7 +9,7 @@ const Home = () => {
       <section id="about">
         <About />
       </section>
-      <section id="carousel" className="p-4">
+      <section id="carousel" className="">
         <Timeline />
       </section>
     </div>

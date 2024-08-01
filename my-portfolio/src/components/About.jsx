@@ -47,6 +47,7 @@ const About = () => {
           <p className="text-gray-200 mb-4">
             Additionally, I independently learn to develop websites and real-time web applications, further honing my skills. This combination of structured learning and personal exploration showcases my commitment to continuously learn and innovate, seeking to expand my technical skills and knowledge. My technical skills include languages such as:
           </p>
+          <h3 className='text-gray-50 font-semibold'>Languages:</h3>
           <div className="flex flex-wrap gap-6 pt-6">
             {skills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center">
@@ -55,6 +56,7 @@ const About = () => {
               </div>
             ))}
           </div>
+          <h3 className='text-gray-50 pt-6 font-semibold'>Frameworks/Libraries:</h3>
           <div className="flex flex-wrap gap-6 pt-6">
             {frameworks.map((framework) => (
               <div key={framework.name} className="flex flex-col items-center">

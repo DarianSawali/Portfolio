@@ -129,14 +129,14 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4 lg:p-4">
         {projects.map((project, index) => (
           <div
             key={index}
             role="tabpanel"
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
           >
-            <div className="card shadow-md bg-gray-600 p-4">
+            <div className="card shadow-md bg-gray-600 p-4 lg:p-8">
               <h2 className="text-xl font-bold mb-2 text-white">{project.title}</h2>
               <p className="mb-4 text-gray-100">{project.description}</p>
               {project.content}
