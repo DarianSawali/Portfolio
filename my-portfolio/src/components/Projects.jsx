@@ -26,7 +26,7 @@ const projects = [
           <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto" />
         </div>
 
-        <p className='text-gray-200'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
         </p>
         <div className='flex justify-center'> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
@@ -36,18 +36,18 @@ const projects = [
         </div>
         
         {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
-        <p className='text-gray-200'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
 
-        <p className='text-gray-200'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience.</p>
 
-        <div className='flex justify-center'> 
+        <div className='flex justify-center '> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
             <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto " />
             <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto" />
           </div>
         </div>
 
-        <p className='text-gray-200'>Despite significant improvements, the polyline accuracy still falls short compared to modern apps. Challenges like real-time data handling and precise location plotting remain. This experience underscored the need for continuous optimization and the importance of balancing feature richness with app responsiveness and user experience. Additionally given further revisions, I would have liked to implement a way to store these pathways for user recollection.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Despite significant improvements, the polyline accuracy still falls short compared to modern apps. Challenges like real-time data handling and precise location plotting remain. This experience underscored the need for continuous optimization and the importance of balancing feature richness with app responsiveness and user experience. Additionally given further revisions, I would have liked to implement a way to store these pathways for user recollection.</p>
       </div>
     ),
   },
@@ -114,13 +114,13 @@ const Projects = () => {
   };
 
   return (
-    <div>
-      <div role="tablist" className="tabs tabs-bordered flex flex-wrap sm:flex-nowrap justify-center">
+    <div className='mt-3'>
+      <div role="tablist" className="tabs tabs-bordered flex flex-wrap sm:flex-nowrap justify-start px-4">
         {projects.map((project, index) => (
           <a
             key={index}
             role="tab"
-            className={`tab ${activeTab === index ? 'tab-active bg-purple-900 rounded-md' : ''} text-zinc-400`}
+            className={`tab ${activeTab === index ? 'tab-active bg-purple-900 rounded-md' : ''} text-zinc-400  sm:px-6 md:pb-8 md:px-8 lg:pb-8 lg:px-10 text-sm sm:text-base md:text-lg lg:text-xl truncate whitespace-nowrap overflow-hidden`}
             onClick={() => handleTabClick(index)}
             href={`#${project.id}`}
           >
@@ -129,16 +129,16 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="mt-4 lg:p-4">
+      <div className="mt-4 px-2 lg:p-4">
         {projects.map((project, index) => (
           <div
             key={index}
             role="tabpanel"
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
           >
-            <div className="card shadow-md bg-gray-600 p-4 lg:p-8">
+            <div className="card shadow-md bg-slate-800 p-5 sm:p-6 md:p-7 lg:p-8 ">
               <h2 className="text-xl font-bold mb-2 text-white">{project.title}</h2>
-              <p className="mb-4 text-gray-100">{project.description}</p>
+              <p className="mb-4 text-gray-100 py-2 md:text-base ">{project.description}</p>
               {project.content}
             </div>
           </div>

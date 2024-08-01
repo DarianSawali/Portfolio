@@ -4,6 +4,7 @@ import { Home as HomeIcon, StickyNote } from 'lucide-react';
 import Sidebar, { SidebarItem, SidebarContext  } from './components/Sidebar';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 import About from './components/About';
 import { RiMenuFold2Line } from 'react-icons/ri';
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <Router>
       <SidebarContext.Provider value={{ expanded: isSidebarExpanded, setExpanded: setIsSidebarExpanded }}>
-        <div className="bg-zinc-800 min-h-screen flex ">
+        <div className="bg-zinc-800 min-h-screen flex">
           {/* Sidebar for medium and larger screens */}
           <div className="hidden md:block ">
             <Sidebar expanded={isSidebarExpanded}>
@@ -29,7 +30,7 @@ function App() {
           </div>
 
           {/* Content area */}
-          <div className="flex-1">
+          <div className="flex-1 flex flex-col">
             {/* Header with toggle button for small screens */}
             <header className="bg-zinc-900 text-4xl p-4 text-white flex items-center sticky top-0 relative z-10">
             <button
@@ -43,12 +44,15 @@ function App() {
               
             </header>
 
-            <main className="container mx-auto p-4 bg-zinc-800">
+            <main className="container mx-auto p-4 bg-zinc-800 flex-grow">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
               </Routes>
             </main>
+            {/* <footer> */}
+              <Footer/>
+            {/* </footer> */}
           </div>
 
           {/* Overlay Sidebar for small screens */}
@@ -62,6 +66,8 @@ function App() {
               </div>
             </div>
           )}
+
+          
         </div>
       </SidebarContext.Provider>
     </Router>
