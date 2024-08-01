@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaJava, FaHtml5, FaPython, FaCss3Alt, FaReact, FaNodeJs, FaUnity } from 'react-icons/fa';
 import { SiCsharp, SiTypescript, SiExpress, SiTailwindcss, SiMongodb, SiSocketdotio, SiAndroidstudio, SiJavascript  } from "react-icons/si";
+// import profilePic from "https://avatar.iran.liara.run/public/4";
 
 // import profile from "";
 
@@ -32,15 +33,9 @@ const About = () => {
       <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2>
       <div className="grid grid-cols-6 gap-8">
         <div className="col-span-6 md:col-span-2">
-          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" />
-          {/* <div className="avatar placeholder">
-            <div className="bg-neutral text-neutral-content w-60 md:w-48 lg:w-64 xl:w-80 rounded-lg">
-              <span className="text-3xl">DS</span>
-            </div>
-          </div> */}
+          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" loading="lazy" width={800} height={800}/>
         </div>
         <div className="col-span-6 md:col-span-4 bg-slate-900 p-6 rounded-lg shadow-md">
-          {/* <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2> */}
           <p className="text-gray-300 mb-4">
             I’m Darian Sawali, a student at Simon Fraser University, specializing in Interactive Systems with a focus on software development. I have a strong foundation in Object-Oriented Programming, User Interface design, and API integration. My experience includes developing various applications, such as games and mobile apps, through academic coursework.
           </p>
