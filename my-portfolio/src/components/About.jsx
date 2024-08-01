@@ -28,16 +28,16 @@ const About = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8 shadow-slate-400">
+    <div className="container mx-auto px-2 pt-4 pb-8 shadow-slate-400">
       <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2>
       <div className="grid grid-cols-6 gap-8">
         <div className="col-span-6 md:col-span-2">
-          {/* <img src="" alt="" className="rounded-lg w-auto h-full" /> */}
-          <div className="avatar placeholder">
+          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" />
+          {/* <div className="avatar placeholder">
             <div className="bg-neutral text-neutral-content w-60 md:w-48 lg:w-64 xl:w-80 rounded-lg">
               <span className="text-3xl">DS</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-6 md:col-span-4 bg-slate-900 p-6 rounded-lg shadow-md">
           {/* <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2> */}

@@ -67,6 +67,22 @@
   margin: 0 auto;
 }
 
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Example for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+
+/* Example for other text elements */
+p, a, li {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+
 /* .timeline::before,
 .timeline::after {
   content: '';

@@ -23,27 +23,27 @@ const projects = [
           <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
         </ul>
         <div className='flex justify-center py-2'>
-          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto" />
+          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" />
         </div>
 
         <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
         </p>
         <div className='flex justify-center'> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto " />
-            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto" />
+            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
           </div>
         </div>
         
         {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization. Iterative testing with various scenarios, including different environments and travel speeds, allowed me to fine-tune these adjustments. Feedback from these tests was crucial in making incremental improvements to the algorithm and data handling processes.</p>
 
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience. To further visualize this the first image was one of the early prototypes and the second image below was the final result. Although the final </p>
 
         <div className='flex justify-center '> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto " />
-            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto" />
+            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
           </div>
         </div>
 
@@ -64,30 +64,59 @@ const projects = [
           <li>Purpose - Academic Project - create an android application</li>
           <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
         </ul>
-        <p className='text-gray-200'>The need for hands-free interaction during travel sessions led to the integration of a voice recognition function in the TraveLogger app. The goal was to enable users to start and stop sessions, log notes, and access features without manual input. Using Android's built-in SpeechRecognizer class, I began by implementing basic voice command functionality. This involved defining a set of commands and ensuring the app could accurately recognize and respond to them. Key challenges included handling various accents and minimizing background noise interference.
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The need for hands-free interaction during travel sessions led to the integration of a voice recognition function in the TraveLogger app. The goal was to enable users to start and stop sessions, log notes, and access features without manual input. Using Android's built-in SpeechRecognizer class, I began by implementing basic voice command functionality. This involved defining a set of commands and ensuring the app could accurately recognize and respond to them. Key challenges included handling various accents and minimizing background noise interference.
         </p>
         <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3'>
           {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
         </div>
         
-        <p className='text-gray-200'>Throughout the development process, iterative testing was crucial. Initial versions faced issues with command accuracy and noise interference. I refined the command set, improved noise filtering, and implemented better feedback mechanisms to inform users when commands were successfully recognized or needed repetition.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Throughout the development process, iterative testing was crucial. Initial versions faced issues with command accuracy and noise interference. I refined the command set, improved noise filtering, and implemented better feedback mechanisms to inform users when commands were successfully recognized or needed repetition.</p>
 
-        <p className='text-gray-200'>The final version of the voice recognition function was robust, allowing users to seamlessly interact with the app. Comprehensive testing ensured reliable performance across different environments and user accents. The successful implementation of this feature demonstrates my ability to think through a problem from start to finish, iterate based on feedback, and deliver a functional and user-friendly solution.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final version of the voice recognition function was robust, allowing users to seamlessly interact with the app. Comprehensive testing ensured reliable performance across different environments and user accents. The successful implementation of this feature demonstrates my ability to think through a problem from start to finish, iterate based on feedback, and deliver a functional and user-friendly solution.</p>
 
-        <p className='text-gray-200'>During the development process, I aimed to implement a wake word feature to further enhance the hands-free experience. However, due to limitations in the Android SpeechRecognizer and the additional processing power required, this led to significant lag in the app's performance. Continuous listening for commands proved more efficient, despite the trade-off of constant background processing. This experience underscored the importance of balancing functionality with performance and user experience, a crucial consideration in mobile app development.</p>
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>During the development process, I aimed to implement a wake word feature to further enhance the hands-free experience. However, due to limitations in the Android SpeechRecognizer and the additional processing power required, this led to significant lag in the app's performance. Continuous listening for commands proved more efficient, despite the trade-off of constant background processing. This experience underscored the importance of balancing functionality with performance and user experience, a crucial consideration in mobile app development.</p>
       </div>
     ),
   },
   {
     id: 'project3',
     title: 'Project 3',
-    description: 'Description of Project 3',
+    description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
     content: (
-      <div >
-        <p className='project-text'>This is the content of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <img src="https://via.placeholder.com/300" alt="Project 3" className="my-4" />
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div className='flex flex-col gap-4'>
+        <ul className='italic text-gray-300'>
+          <li>Date/Timeframe : November 2023, 4 weeks</li>
+          <li>Role : Android Studio Developer</li>
+          <li>Project Type : Group</li>
+          <li>Purpose - Academic Project - create an android application</li>
+          <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
+        </ul>
+        <div className='flex justify-center py-2'>
+          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" />
+        </div>
+
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
+        </p>
+        <div className='flex justify-center'> 
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
+            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+          </div>
+        </div>
+        
+        {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
+
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience. To further visualize this the first image was one of the early prototypes and the second image below was the final result. Although the final </p>
+
+        <div className='flex justify-center '> 
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
+            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+          </div>
+        </div>
+
+        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Despite significant improvements, the polyline accuracy still falls short compared to modern apps. Challenges like real-time data handling and precise location plotting remain. This experience underscored the need for continuous optimization and the importance of balancing feature richness with app responsiveness and user experience. Additionally given further revisions, I would have liked to implement a way to store these pathways for user recollection.</p>
       </div>
     ),
   },
@@ -137,7 +166,7 @@ const Projects = () => {
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
           >
             <div className="card shadow-md bg-slate-800 p-5 sm:p-6 md:p-7 lg:p-8 ">
-              <h2 className="text-xl font-bold mb-2 text-white">{project.title}</h2>
+              <h2 className="text-xl font-bold mb-2 text-white text-xl">{project.title}</h2>
               <p className="mb-4 text-gray-100 py-2 md:text-base ">{project.description}</p>
               {project.content}
             </div>
