@@ -20,6 +20,7 @@ const projects = [
           <li>Date/Timeframe : November 2023, 4 weeks</li>
           <li>Role : Android Studio Developer</li>
           <li>Project Type : Group</li>
+          <li>Groupmate: Michael Tjokrowardojo</li>
           <li>Purpose - Academic Project - create an android application</li>
           <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
         </ul>
