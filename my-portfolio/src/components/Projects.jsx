@@ -25,7 +25,7 @@ const projects = [
           <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
         </ul>
         <div className='flex justify-center py-2'>
-          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" />
+          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" loading='lazy'/>
         </div>
 
         <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
@@ -44,8 +44,8 @@ const projects = [
 
         <div className='flex justify-center '> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
-            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
           </div>
         </div>
 
@@ -96,15 +96,15 @@ const projects = [
           <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
         </ul>
         <div className='flex justify-center py-2'>
-          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" />
+          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" loading='lazy'/>
         </div>
 
         <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
         </p>
         <div className='flex justify-center'> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
-            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
           </div>
         </div>
         
@@ -115,8 +115,8 @@ const projects = [
 
         <div className='flex justify-center '> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
-            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
           </div>
         </div>
 
@@ -156,6 +156,7 @@ const Projects = () => {
             className={`tab ${activeTab === index ? 'tab-active bg-purple-900 rounded-md' : ''} text-zinc-400  sm:px-6 md:pb-8 md:px-8 lg:pb-8 lg:px-10 text-sm sm:text-base md:text-lg lg:text-xl truncate whitespace-nowrap overflow-hidden`}
             onClick={() => handleTabClick(index)}
             href={`#${project.id}`}
+            aria-label={`View details of ${project.title}`}
           >
             {project.title}
           </a>
@@ -168,6 +169,7 @@ const Projects = () => {
             key={index}
             role="tabpanel"
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
+            aria-labelledby={`tab-${project.id}`}
           >
             <div className="card shadow-md bg-slate-800 p-5 sm:p-6 md:p-7 lg:p-8 ">
               <h2 className="font-bold mb-2 text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">{project.title}</h2>
@@ -176,6 +178,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-300 hover:underline transition-all block sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+                  aria-label={`View the GitHub repository for ${project.title}`}
                 >
                   View on GitHub
               </a>

@@ -16,7 +16,11 @@ export default function Sidebar({ children, expanded }) {
       <nav className="h-full flex flex-col">
         <div className="p-4 pb-2 flex justify-between items-center">
           <span className={`overflow-hidden transition-all text-gray-300 ${expanded ? "w-16" : "w-0"}`}>DS</span>
-          <button onClick={() => setExpanded(!expanded)} className="p-1 rounded-lg text-white bg-transparent">
+          <button 
+            onClick={() => setExpanded(!expanded)} 
+            className="p-1 rounded-lg text-white bg-transparent"
+            aria-label={expanded ? "Collapse sidebar" : "Expand sidebar"}
+          >
             {expanded ? <ChevronFirst /> : <ChevronLast />}
           </button>
         </div>
@@ -46,7 +50,11 @@ export function SidebarItem({ icon, text, path, alert }) {
   const isActive = location.pathname === path;
 
   return (
-    <Link to={path} className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${isActive ? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-black" : "hover:bg-purple-900 text-gray-400 hover:text-white"}`}>
+    <Link 
+      to={path} 
+      className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${isActive ? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-black" : "hover:bg-purple-900 text-gray-400 hover:text-white"}`}
+      aria-label={text}
+    >
       {icon}
       <span className={`overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0"}`}>{text}</span>
       {alert && (
@@ -60,6 +68,5 @@ export function SidebarItem({ icon, text, path, alert }) {
     </Link>
   );
 }
-
 
 
