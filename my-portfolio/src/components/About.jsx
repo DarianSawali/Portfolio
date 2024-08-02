@@ -30,33 +30,33 @@ const About = () => {
 
   return (
     <div className="container mx-auto px-2 pt-4 pb-8 shadow-slate-400">
-      <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white md:text-3xl lg:text-4xl xl:text-5xl pb-8">About Me</h2>
       <div className="grid grid-cols-6 gap-8">
         <div className="col-span-6 md:col-span-2">
-          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" loading="lazy" width={800} height={800}/>
+          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" loading="lazy" width={700} height={700}/>
         </div>
         <div className="col-span-6 md:col-span-4 bg-slate-900 p-6 rounded-lg shadow-md">
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             I’m Darian Sawali, a student at Simon Fraser University, specializing in Interactive Systems with a focus on software development. I have a strong foundation in Object-Oriented Programming, User Interface design, and API integration. My experience includes developing various applications, such as games and mobile apps, through academic coursework.
           </p>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             Additionally, I independently learn to develop websites and real-time web applications, further honing my skills. This combination of structured learning and personal exploration showcases my commitment to continuously learn and innovate, seeking to expand my technical skills and knowledge. My technical skills include languages such as:
           </p>
-          <h3 className='text-gray-50 font-semibold'>Languages:</h3>
+          <h3 className='text-gray-50 font-semibold md:text-lg pt-4'>Languages:</h3>
           <div className="flex flex-wrap gap-6 pt-6">
             {skills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center">
                 {skill.icon}
-                <span className="mt-2 text-gray-100">{skill.name}</span>
+                <span className="mt-2 text-gray-100 md:text-lg">{skill.name}</span>
               </div>
             ))}
           </div>
-          <h3 className='text-gray-50 pt-6 font-semibold'>Frameworks/Libraries:</h3>
+          <h3 className='text-gray-50 pt-6 font-semibold md:text-lg'>Frameworks/Libraries:</h3>
           <div className="flex flex-wrap gap-6 pt-6">
             {frameworks.map((framework) => (
               <div key={framework.name} className="flex flex-col items-center">
                 {framework.icon}
-                <span className="mt-2 text-gray-100">{framework.name}</span>
+                <span className="mt-2 text-gray-100 md:text-lg">{framework.name}</span>
               </div>
             ))}
           </div>

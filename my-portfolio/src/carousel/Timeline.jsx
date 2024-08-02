@@ -47,7 +47,7 @@ import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
         <div className="grid gap-4 mx-4 md:grid-cols-12">
           <div className="col-span-12 md:col-span-3">
             <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-purple-900">
-              <h3 className="text-3xl font-semibold text-zinc-300">Project Timeline</h3>
+              <h3 className="text-3xl font-semibold text-zinc-300 md:text-3xl lg:text-4xl xl:text-5xl">Project Timeline</h3>
               <span className="text-sm font-bold tracking-wider uppercase text-gray-500">Latest Projects</span>
             </div>
           </div>
@@ -56,12 +56,12 @@ import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
             {projects.map((project, index) => (
               <Link to={`/projects#${project.id}`} key={index} className="block">
                 <div
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-purple-900 pl-7 "
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-26.1px] sm:before:z-[1] before:bg-purple-900 pl-7 "
                 >
-                  <div className='hover:scale-105 hover:bg-purple-900 p-4 bg-black rounded-lg cursor-pointer transition-all hover:border hover:text-white'>
-                    <h3 className="text-xl font-semibold tracking-wide text-white">{project.title}</h3>
-                    <time className="text-xs tracking-wide uppercase text-gray-400">{project.date}</time>
-                    <p className="mt-3">{project.description}</p>
+                  <div className='hover:scale-105 hover:bg-purple-900 p-4 bg-black rounded-lg cursor-pointer transition-all hover:border hover:text-white lg:p-6'>
+                    <h3 className="text-xl font-semibold tracking-wide text-white md:text-2xl lg:text-3xl xl:text-4xl pb-3">{project.title}</h3>
+                    <time className="text-xs tracking-wide uppercase text-gray-400 sm:text-base md:text-lg lg:text-xl xl:text-2xl">{project.date}</time>
+                    <p className="mt-3 sm:text-base md:text-lg lg:text-xl xl:text-2xl">{project.description}</p>
                   </div>
                 </div>
               </Link>

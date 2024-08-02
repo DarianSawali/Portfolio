@@ -32,8 +32,8 @@ const projects = [
         </p>
         <div className='flex justify-center'> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
-            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
+            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md " loading='lazy' />
+            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
           </div>
         </div>
         
@@ -170,16 +170,16 @@ const Projects = () => {
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
           >
             <div className="card shadow-md bg-slate-800 p-5 sm:p-6 md:p-7 lg:p-8 ">
-              <h2 className="text-3xl font-bold mb-2 text-white">{project.title}</h2>
+              <h2 className="font-bold mb-2 text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">{project.title}</h2>
               <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-300 hover:underline transition-all block"
+                  className="text-purple-300 hover:underline transition-all block sm:text-base md:text-lg lg:text-xl xl:text-2xl"
                 >
                   View on GitHub
               </a>
-              <p className="mb-4 text-gray-100 py-2 md:text-base ">{project.description}</p>
+              <p className="mb-4 text-gray-100 py-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">{project.description}</p>
               {project.content}
               {/* {project.github && (
                 
