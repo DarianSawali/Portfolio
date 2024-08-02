@@ -52,8 +52,7 @@
   color: #d1d5db;
 }
 
-.timeline-item.active .timeline-date,
-.timeline-item.active .timeline-title {
+.timeline-item.active .timeline-date, .timeline-item.active .timeline-title {
   color: #ffffff;
 }
 

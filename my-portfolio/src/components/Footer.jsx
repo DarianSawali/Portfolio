@@ -6,10 +6,10 @@ const Footer = () => {
         <div className="container mx-auto flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left pt-4">
             <div className="flex flex-col items-center sm:items-center">
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all">
+              <a href="https://www.linkedin.com/in/dariansawali" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all">
                 LinkedIn
               </a>
-              <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all">
+              <a href="https://github.com/DarianSawali" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all">
                 GitHub
               </a>
             </div>
