@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
 
+
+// https://mambaui.com/components/timeline
   const projects = [
     {
       id: 'travelogger',

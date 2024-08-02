@@ -6,6 +6,8 @@ import { RiMenuFold2Line } from "react-icons/ri";
 
 const SidebarContext = createContext();
 
+// https://medium.com/@constgenius/build-a-retractable-sidebar-component-purely-in-reactjs-and-tailwind-css-react-sidebar-navigation-94c3704e3e51
+
 export default function Sidebar({ children, expanded }) {
   const { setExpanded } = useContext(SidebarContext);
 

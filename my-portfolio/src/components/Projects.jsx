@@ -13,6 +13,7 @@ const projects = [
     id: 'travelogger',
     title: 'TraveLogger',
     description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
+    github: 'https://github.com/DarianSawali/Portfolio',
     content: (
       <div className='flex flex-col gap-4'>
         <ul className='italic text-gray-300'>
@@ -55,6 +56,7 @@ const projects = [
     id: 'project2',
     title: 'TraveLogger',
     description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
+    github: '',
     content: (
       <div className='flex flex-col gap-4'>
         <ul className='italic text-gray-300'>
@@ -82,6 +84,7 @@ const projects = [
     id: 'project3',
     title: 'Project 3',
     description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
+    github: '',
     content: (
       <div className='flex flex-col gap-4'>
         <ul className='italic text-gray-300'>
@@ -166,9 +169,20 @@ const Projects = () => {
             className={`tab-content ${activeTab === index ? 'block' : 'hidden'}`}
           >
             <div className="card shadow-md bg-slate-800 p-5 sm:p-6 md:p-7 lg:p-8 ">
-              <h2 className="text-xl font-bold mb-2 text-white text-xl">{project.title}</h2>
+              <h2 className="text-3xl font-bold mb-2 text-white">{project.title}</h2>
+              <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-300 hover:underline transition-all block"
+                >
+                  View on GitHub
+              </a>
               <p className="mb-4 text-gray-100 py-2 md:text-base ">{project.description}</p>
               {project.content}
+              {/* {project.github && (
+                
+              )} */}
             </div>
           </div>
         ))}
