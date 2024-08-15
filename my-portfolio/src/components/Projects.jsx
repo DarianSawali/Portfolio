@@ -229,49 +229,49 @@ const projects = [
   //     </div>
   //   ),
   // },
-  {
-    id: 'project3',
-    title: 'Project 3',
-    description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
-    github: '',
-    content: (
-      <div className='flex flex-col gap-4'>
-        <ul className='italic text-gray-300'>
-          <li>Date/Timeframe : November 2023, 4 weeks</li>
-          <li>Role : Android Studio Developer</li>
-          <li>Project Type : Group</li>
-          <li>Purpose - Academic Project - create an android application</li>
-          <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
-        </ul>
-        <div className='flex justify-center py-2'>
-          <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" loading='lazy'/>
-        </div>
+  // {
+  //   id: 'project3',
+  //   title: 'Project 3',
+  //   description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
+  //   github: '',
+  //   content: (
+  //     <div className='flex flex-col gap-4'>
+  //       <ul className='italic text-gray-300'>
+  //         <li>Date/Timeframe : November 2023, 4 weeks</li>
+  //         <li>Role : Android Studio Developer</li>
+  //         <li>Project Type : Group</li>
+  //         <li>Purpose - Academic Project - create an android application</li>
+  //         <li>Tools : Android Studio using Java (Object-Oriented Programming, SQLIte Database, Fragments, Google maps API, and Voice Recognition)</li>
+  //       </ul>
+  //       <div className='flex justify-center py-2'>
+  //         <img src ={appTitle} alt="TraveLogger Title" className=" sm:w-64 md:w-80 lg:w-128 h-auto rounded-md" loading='lazy'/>
+  //       </div>
 
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
-        </p>
-        <div className='flex justify-center'> 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
-            <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
-          </div>
-        </div>
+  //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>To enhance the TraveLogger app's functionality, integrating a feature to visualize travel routes on a map was essential. This led to the implementation of polylines, allowing users to see their journey paths. Using the Google Maps API, I started by plotting basic routes. This involved capturing the user’s location data at intervals and rendering it as a polyline on the map. Key challenges included ensuring accuracy and updating the polyline in real-time as the user moved.
+  //       </p>
+  //       <div className='flex justify-center'> 
+  //         <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
+  //           <img src={homePage} alt="Home page of the app" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+  //           <img src={startSession} alt="Started session page" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+  //         </div>
+  //       </div>
         
-        {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
+  //       {/* <img src="https://via.placeholder.com/300" alt="Project 1" className=" w-72 h-72" /> */}
+  //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Through iterative testing, I improved route accuracy and responsiveness. Early versions faced issues with lag and imprecise plotting. Refining the algorithm for location updates and optimizing data handling resolved these problems, resulting in smoother, more accurate route visualization.</p>
 
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience. To further visualize this the first image was one of the early prototypes and the second image below was the final result. Although the final </p>
+  //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience. To further visualize this the first image was one of the early prototypes and the second image below was the final result. Although the final </p>
 
-        <div className='flex justify-center '> 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
-            <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
-            <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
-          </div>
-        </div>
+  //       <div className='flex justify-center '> 
+  //         <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
+  //           <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+  //           <img src={polylineFinal} alt="Final Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" loading='lazy'/>
+  //         </div>
+  //       </div>
 
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Despite significant improvements, the polyline accuracy still falls short compared to modern apps. Challenges like real-time data handling and precise location plotting remain. This experience underscored the need for continuous optimization and the importance of balancing feature richness with app responsiveness and user experience. Additionally given further revisions, I would have liked to implement a way to store these pathways for user recollection.</p>
-      </div>
-    ),
-  },
+  //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>Despite significant improvements, the polyline accuracy still falls short compared to modern apps. Challenges like real-time data handling and precise location plotting remain. This experience underscored the need for continuous optimization and the importance of balancing feature richness with app responsiveness and user experience. Additionally given further revisions, I would have liked to implement a way to store these pathways for user recollection.</p>
+  //     </div>
+  //   ),
+  // },
 
   //       <div className='flex justify-center '> 
   //         <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
