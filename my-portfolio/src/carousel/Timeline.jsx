@@ -6,38 +6,39 @@ import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
 // https://mambaui.com/components/timeline
   const projects = [
     {
+      id: 'chatapp',
+      title: 'Chat-App',
+      description: 'The Chat-App is a real-time messaging application built with a modern web stack. It features user authentication, real-time communication, and a responsive user interface.',
+      date: 'June - July 2024',
+      content: (
+        <div>
+          <p></p>
+        </div>
+      ),
+    },
+    {
+      id: 'spiritmaes',
+      title: 'Spirit Maes',
+      description: 'Spirit Maes is a 3D physics game with a top-down 2D POV puzzle game focusing on game mechanic and appealing visual pixel art.',
+      date: 'January - April 2024',
+      content: (
+        <div>
+          {/* <p>This is the content of Project 3.</p> */}
+        </div>
+      ),
+    },
+    {
       id: 'travelogger',
       title: 'TraveLogger',
       description: 'TraveLogger is a mobile app that tracks travel sessions, logs locations, counts steps, and provides hands-free operation with voice recognition.',
       date: 'November 2023',
       content: (
         <div>
-          <p>The need for hands-free interaction during travel sessions led to the integration of a voice recognition function in the TraveLogger app.</p>
+          {/* <p>The need for hands-free interaction during travel sessions led to the integration of a voice recognition function in the TraveLogger app.</p> */}
         </div>
       ),
     },
-    {
-      id: 'project2',
-      title: 'Project 2',
-      description: 'Description of Project 2',
-      date: 'January 2024',
-      content: (
-        <div>
-          <p>This is the content of Project 2.</p>
-        </div>
-      ),
-    },
-    {
-      id: 'project3',
-      title: 'Project 3',
-      description: 'Description of Project 3',
-      date: 'March 2024',
-      content: (
-        <div>
-          <p>This is the content of Project 3.</p>
-        </div>
-      ),
-    },
+    
     
   ];
 
