@@ -3,7 +3,7 @@ import { FaJava, FaHtml5, FaPython, FaCss3Alt, FaReact, FaNodeJs, FaUnity } from
 import { SiCsharp, SiTypescript, SiExpress, SiTailwindcss, SiMongodb, SiSocketdotio, SiAndroidstudio, SiJavascript  } from "react-icons/si";
 // import profilePic from "https://avatar.iran.liara.run/public/4";
 
-// import profile from "";
+import profilePic from '../assets/profile/profile-pic.jpg';
 
 const About = () => {
   const skills = [
@@ -33,7 +33,7 @@ const About = () => {
       <h2 className="text-2xl font-bold mb-4 text-white md:text-3xl lg:text-4xl xl:text-5xl pb-8">About Me</h2>
       <div className="grid grid-cols-6 gap-8">
         <div className="col-span-6 md:col-span-2">
-          <img src="https://avatar.iran.liara.run/public/4" alt="avatar placeholder" className="rounded-lg w-full h-auto" loading="lazy" width={700} height={700}/>
+          <img src={profilePic} alt="avatar placeholder" className="rounded-lg w-full h-auto" loading="lazy" width={700} height={700}/>
         </div>
         <div className="col-span-6 md:col-span-4 bg-slate-900 p-6 rounded-lg shadow-md">
           <p className="text-gray-300 mb-4 sm:text-base md:text-lg lg:text-xl xl:text-2xl">

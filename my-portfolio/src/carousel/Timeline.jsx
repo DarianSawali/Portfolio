@@ -57,7 +57,7 @@ import traveloggerTitle from '../assets/travelogger/travelogger-title.png';
             {projects.map((project, index) => (
               <Link to={`/projects#${project.id}`} key={index} className="block">
                 <div
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-26.1px] sm:before:z-[1] before:bg-purple-900 pl-7 "
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-purple-900 pl-7 "
                 >
                   <div className='hover:scale-105 hover:bg-purple-900 p-4 bg-black rounded-lg cursor-pointer transition-all hover:border hover:text-white lg:p-6'>
                     <h3 className="text-xl font-semibold tracking-wide text-white md:text-2xl lg:text-3xl xl:text-4xl pb-3">{project.title}</h3>
