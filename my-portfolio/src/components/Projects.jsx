@@ -224,11 +224,11 @@ const projects = [
 
   //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>The final polyline feature reliably tracks and displays user routes in real-time, enhancing the app’s usability. Comprehensive testing ensured robust performance across various devices and environments. This project highlights my ability to integrate complex features, problem-solve, and deliver a polished user experience. To further visualize this the first image was one of the early prototypes and the second image below was the final result. Although the final </p>
 
-<<<<<<< Updated upstream
-        <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>During the development process, I aimed to implement a wake word feature to further enhance the hands-free experience. However, due to limitations in the Android SpeechRecognizer and the additional processing power required, this led to significant lag in the app's performance. Continuous listening for commands proved more efficient, despite the trade-off of constant background processing. This experience underscored the importance of balancing functionality with performance and user experience, a crucial consideration in mobile app development.</p>
-      </div>
-    ),
-  },
+
+  //       <p className='text-gray-200 md:py-2 lg:py-4 md:text-base lg:text-lg'>During the development process, I aimed to implement a wake word feature to further enhance the hands-free experience. However, due to limitations in the Android SpeechRecognizer and the additional processing power required, this led to significant lag in the app's performance. Continuous listening for commands proved more efficient, despite the trade-off of constant background processing. This experience underscored the importance of balancing functionality with performance and user experience, a crucial consideration in mobile app development.</p>
+  //     </div>
+  //   ),
+  // },
   {
     id: 'project3',
     title: 'Project 3',
@@ -272,7 +272,7 @@ const projects = [
       </div>
     ),
   },
-=======
+
   //       <div className='flex justify-center '> 
   //         <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center justify-center'>
   //           <img src={polylinePrototype} alt="Prototype Polyline build" className="w-56 sm:w-64 md:w-72 lg:w-96 h-auto rounded-md" />
@@ -284,7 +284,7 @@ const projects = [
   //     </div>
   //   ),
   // },
->>>>>>> Stashed changes
+
   
 ];
 
